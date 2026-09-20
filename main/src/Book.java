@@ -10,4 +10,11 @@ public class Book {
     String title;
     String author;
     double price;
+
+    // constructor sets all three fields when a new Book is created
+    public Book(String title, String author, double price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
 }
