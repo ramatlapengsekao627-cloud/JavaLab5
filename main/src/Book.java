@@ -7,16 +7,40 @@
 
 //just a class with basic fields
 public class Book {
-    String title;
-    String author;
-    double price;
+    private String title;
+    private String author;
+    private double price;
 
-    // constructor sets all three fields when a new Book is created
     public Book(String title, String author, double price) {
         this.title = title;
         this.author = author;
         this.price = price;
     }
+
+    // getter and setter for title
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    // getter and setter for author
+    public String getAuthor() {
+        return author;
+    }
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    // getter and setter for price
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     // combines title, author and price into one String
     public String getSummary() {
         return title + " by " + author + " - $" + price;
