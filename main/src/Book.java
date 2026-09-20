@@ -17,4 +17,8 @@ public class Book {
         this.author = author;
         this.price = price;
     }
+    // combines title, author and price into one String
+    public String getSummary() {
+        return title + " by " + author + " - $" + price;
+    }
 }
